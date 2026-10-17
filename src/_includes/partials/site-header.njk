@@ -1,0 +1,8 @@
+<header class="site-header wrap">
+  <a class="site-header__logo" href="/" aria-label="{{ site.name }} home">
+    {% img "logo/logo-light", site.name, "120px", "", 'loading="eager"' %}
+  </a>
+  <nav class="nav" aria-label="Primary">
+    {% include "partials/nav-links.njk" %}
+  </nav>
+</header>

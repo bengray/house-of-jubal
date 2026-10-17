@@ -1,0 +1,171 @@
+{
+  "covers/maple": {
+    "widths": [
+      480,
+      800,
+      1200,
+      1402
+    ],
+    "width": 1402,
+    "height": 1122
+  },
+  "covers/olive": {
+    "widths": [
+      480,
+      800,
+      1200,
+      1402
+    ],
+    "width": 1402,
+    "height": 1122
+  },
+  "covers/padauk": {
+    "widths": [
+      480,
+      800,
+      1122
+    ],
+    "width": 1122,
+    "height": 913
+  },
+  "covers/purpleheart": {
+    "widths": [
+      480,
+      800,
+      1200,
+      1402
+    ],
+    "width": 1402,
+    "height": 1122
+  },
+  "covers/walnut": {
+    "widths": [
+      480,
+      800,
+      1200,
+      1402
+    ],
+    "width": 1402,
+    "height": 1122
+  },
+  "guitars/mathetes-padauk": {
+    "widths": [
+      480,
+      800,
+      1200,
+      1500
+    ],
+    "width": 1500,
+    "height": 869
+  },
+  "guitars/mathetes-spotlight": {
+    "widths": [
+      480,
+      800,
+      1200,
+      1484
+    ],
+    "width": 1484,
+    "height": 1060
+  },
+  "guitars/mathetes": {
+    "widths": [
+      480,
+      800,
+      1200,
+      1484
+    ],
+    "width": 1484,
+    "height": 1060
+  },
+  "guitars/petros": {
+    "widths": [
+      480,
+      800,
+      1200,
+      1448
+    ],
+    "width": 1448,
+    "height": 1086
+  },
+  "guitars/redemption": {
+    "widths": [
+      480,
+      800,
+      1092
+    ],
+    "width": 1092,
+    "height": 1440
+  },
+  "logo/lion-dark": {
+    "widths": [
+      480,
+      800,
+      876
+    ],
+    "width": 876,
+    "height": 1192
+  },
+  "logo/lion-light": {
+    "widths": [
+      480,
+      800,
+      884
+    ],
+    "width": 884,
+    "height": 1201
+  },
+  "logo/logo-dark": {
+    "widths": [
+      480,
+      800,
+      900
+    ],
+    "width": 900,
+    "height": 764
+  },
+  "logo/logo-light": {
+    "widths": [
+      480,
+      800,
+      900
+    ],
+    "width": 900,
+    "height": 764
+  },
+  "swatches/maple": {
+    "widths": [
+      240
+    ],
+    "width": 240,
+    "height": 240
+  },
+  "swatches/olive": {
+    "widths": [
+      240
+    ],
+    "width": 240,
+    "height": 240
+  },
+  "swatches/padauk": {
+    "widths": [
+      240
+    ],
+    "width": 240,
+    "height": 240
+  },
+  "swatches/purpleheart": {
+    "widths": [
+      240
+    ],
+    "width": 240,
+    "height": 240
+  },
+  "swatches/walnut": {
+    "widths": [
+      240
+    ],
+    "width": 240,
+    "height": 240
+  }
+}

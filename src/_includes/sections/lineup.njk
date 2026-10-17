@@ -1,0 +1,48 @@
+{% set feature = models[0] %}
+<section class="lineup light" id="lineup">
+  <div class="wrap stack-xl">
+    <div class="section-head">
+      <div class="stack-s">
+        <p class="eyebrow eyebrow--walnut">I. The Instruments</p>
+        <h2 class="h2">Three shapes.<br><em>No two alike.</em></h2>
+      </div>
+      <p class="section-head__aside">Each model carries the same House of Jubal design language. Woods, neck, electronics and finish are chosen with you. Pricing is shared once we know what you're asking for.</p>
+    </div>
+
+    <article class="model model--feature" data-vt-card="lineup-{{ feature.slug }}" id="lineup-{{ feature.slug }}">
+      <a class="model__media rake" href="/instruments/{{ feature.slug }}/" aria-label="{{ feature.name }}" data-vt-photo data-vt-preload="{{ feature.image | srcset }}">
+        {% img feature.image, feature.imageAlt, "(min-width: 1000px) 60vw, 100vw", "model__img" %}
+      </a>
+      <div class="model__body">
+        <span class="model__num">{{ feature.number }}</span>
+        <h3 class="model__name" data-vt-name>{{ feature.name }}</h3>
+        <p class="eyebrow eyebrow--walnut">{{ feature.meaning }}</p>
+        <p>{{ feature.summary }}</p>
+        <div class="model__foot">
+          <span>Pricing on request</span>
+          <a href="/instruments/{{ feature.slug }}/">See the {{ feature.name }} →</a>
+        </div>
+      </div>
+    </article>
+
+    <div class="model-grid">
+      {% for m in models %}{% if not loop.first %}
+      <article class="model" data-vt-card="lineup-{{ m.slug }}" id="lineup-{{ m.slug }}">
+        <a class="model__media rake{% if m.slug == 'redemption' %} model__media--black{% endif %}" href="/instruments/{{ m.slug }}/" aria-label="{{ m.name }}" data-vt-photo data-vt-preload="{{ m.image | srcset }}">
+          {% img m.image, m.imageAlt, "(min-width: 760px) 45vw, 100vw", "model__img", 'style="object-position: ' + m.slicePosition + '"' %}
+        </a>
+        <div class="model__title">
+          <span class="model__num">{{ m.number }}</span>
+          <h3 class="model__name" data-vt-name>{{ m.name }}</h3>
+        </div>
+        <p class="eyebrow eyebrow--walnut">{{ m.meaning }}</p>
+        <p>{{ m.summary }}</p>
+        <div class="model__foot">
+          <span>Pricing on request</span>
+          <a href="/instruments/{{ m.slug }}/">{% if m.slug == 'redemption' %}The story{% else %}See the {{ m.name }}{% endif %} →</a>
+        </div>
+      </article>
+      {% endif %}{% endfor %}
+    </div>
+  </div>
+</section>

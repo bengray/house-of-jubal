@@ -1,0 +1,46 @@
+<section class="hero" id="top">
+  <div class="hero__type">
+    <a class="hero__logo" href="/" aria-label="{{ site.name }} home">
+      {% img "logo/logo-light", site.name, "160px", "", 'loading="eager" fetchpriority="high"' %}
+    </a>
+    <nav class="nav nav--hero-mobile" aria-label="Primary">
+      {% include "partials/nav-links.njk" %}
+    </nav>
+    <div class="hero__copy">
+      <h1 class="display">Made for<br>the <em>player.</em></h1>
+      <p class="lede">{{ site.philosophy }} Three shapes, built one at a time, around the person who'll play them.</p>
+      <div class="actions">
+        <a class="btn btn--brass" href="#inquire">Start a commission</a>
+        <a class="btn btn--text" href="#offers">Repairs &amp; setups →</a>
+      </div>
+    </div>
+    <div class="hero__woods">
+      <span class="eyebrow">From the wood rack</span>
+      <div class="swatches">
+        {% for w in woods %}
+        <a class="swatch" href="#covers" data-wood="{{ w.id }}" aria-label="{{ w.name }} pickup covers" title="{{ w.name }}">
+          {% img "swatches/" + w.id, "", "52px" %}
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__slices">
+    <nav class="nav nav--over nav--hero-desktop" aria-label="Primary">
+      {% include "partials/nav-links.njk" %}
+    </nav>
+    {% for m in models %}
+    <a class="slice" href="/instruments/{{ m.slug }}/" data-vt-card="hero-{{ m.slug }}" data-vt-preload="{{ m.image | srcset }}">
+      <span class="slice__media rake" data-vt-photo>
+        {% img m.image, m.imageAlt, "(min-width: 1100px) 22vw, 34vw", "slice__img", 'loading="eager" style="object-position: ' + m.slicePosition + '"' %}
+        <span class="slice__shade" aria-hidden="true"></span>
+      </span>
+      <span class="slice__label" data-vt-label>
+        <span class="eyebrow">{{ m.number }} · {{ m.tag }}</span>
+        <span class="slice__name" data-vt-name>{{ m.name }}</span>
+      </span>
+    </a>
+    {% endfor %}
+  </div>
+</section>

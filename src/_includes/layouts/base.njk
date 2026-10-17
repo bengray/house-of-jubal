@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if title %}{{ title }} · {% endif %}{{ site.legalName }}</title>
+  <meta name="description" content="{{ description or site.description }}">
+  <meta name="theme-color" content="#171717">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{% if title %}{{ title }} · {% endif %}{{ site.legalName }}">
+  <meta property="og:description" content="{{ description or site.description }}">
+  <meta property="og:image" content="{{ (ogImage or 'guitars/mathetes-spotlight') | imgUrl(1200) }}">
+  <link rel="icon" href="{{ 'logo/lion-light' | imgUrl(480) }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&family=Spline+Sans+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  {# Hold the first frame until the whole page is parsed (the footer comes last), so
+     during a View Transition every guitar is in the DOM and the page is tall enough
+     to restore its scroll position. Images don't block; this is only the HTML. #}
+  <link rel="expect" href="#site-footer" blocking="render">
+  <script src="/assets/js/transitions.js"></script>
+  <script src="/assets/js/main.js" defer></script>
+</head>
+<body class="{{ bodyClass }}">
+  <a class="skip-link" href="#main">Skip to content</a>
+  {% if not homeHeader %}{% include "partials/site-header.njk" %}{% endif %}
+  <main id="main">
+    {{ content | safe }}
+  </main>
+  {% include "partials/site-footer.njk" %}
+</body>
+</html>

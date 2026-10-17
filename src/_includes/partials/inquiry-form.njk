@@ -1,0 +1,30 @@
+{# Netlify Forms: the hidden form-name field and data-netlify attribute register it at deploy. #}
+{% set pre = preselect or (model.slug if model else "") %}
+<form class="inquiry" name="inquiry" method="POST" action="/thanks/" data-netlify="true" netlify-honeypot="company">
+  <input type="hidden" name="form-name" value="inquiry">
+  <p class="visually-hidden"><label>Leave this empty <input name="company" tabindex="-1" autocomplete="off"></label></p>
+  <label class="field">Your name
+    <input name="name" type="text" autocomplete="name" required>
+  </label>
+  <label class="field">Email
+    <input name="email" type="email" autocomplete="email" required>
+  </label>
+  <label class="field">I'm interested in
+    <select name="interest">
+      {% for m in models %}<option{% if pre == m.slug %} selected{% endif %}>{% if m.slug == "redemption" %}The Redemption Series{% else %}A {{ m.name }}{% endif %}</option>
+      {% endfor %}<option>Pickup covers</option>
+      <option>A repair or setup</option>
+      <option{% if not pre %} selected{% endif %}>Not sure yet</option>
+    </select>
+  </label>
+  <label class="field"><span class="field__label">Budget range <span class="field__hint">(optional)</span></span>
+    <input name="budget" type="text">
+  </label>
+  <label class="field field--full">How you play, and the story you want it to carry
+    <textarea name="message" rows="5"></textarea>
+  </label>
+  <div class="inquiry__foot">
+    <span>No obligation. No mailing list.</span>
+    <button class="btn btn--ink" type="submit">Send it to the bench →</button>
+  </div>
+</form>

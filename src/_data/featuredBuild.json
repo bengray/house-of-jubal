@@ -1,0 +1,20 @@
+{
+  "title": "Mathetēs",
+  "titleAccent": "in padauk",
+  "model": "mathetes",
+  "number": "[No. ###]",
+  "player": "[Player]",
+  "date": "[Month Year]",
+  "image": "guitars/mathetes-padauk",
+  "imageAlt": "A Mathetēs built in deep orange-red padauk, with matching padauk pickup covers and fretboard inlays",
+  "quote": "[A line from the player about what they asked for — in their own words.]",
+  "story": "[Two or three sentences in the builder's voice: where the padauk came from, what the build had to solve, the moment it first rang true.]",
+  "specs": [
+    { "label": "Body", "value": "Padauk" },
+    { "label": "Pickup covers", "value": "Padauk, made in-house" },
+    { "label": "Neck", "value": "[Wood, carve profile]" },
+    { "label": "Fretboard", "value": "[Wood], padauk inlays" },
+    { "label": "Electronics", "value": "[Pickups, controls]" }
+  ],
+  "hours": "[###]"
+}

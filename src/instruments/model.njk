@@ -1,0 +1,75 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: models
+  size: 1
+  alias: model
+permalink: "/instruments/{{ model.slug }}/"
+eleventyComputed:
+  title: "{{ model.name }}"
+  description: "{{ model.summary }}"
+  ogImage: "{{ model.image }}"
+bodyClass: model-page
+---
+{% set preselect = model.slug %}
+<article>
+  <header class="model-hero" id="model-hero" data-vt-hero>
+    <a class="close-btn" href="/#lineup-{{ model.slug }}" data-vt-close aria-label="Close {{ model.name }} and return to the instruments" title="Close (Esc)">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path d="M5 5l14 14M19 5L5 19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+    </a>
+    <div class="model-hero__photo rake" data-vt-photo>
+      {% img model.image, model.imageAlt, "100vw", "model-hero__img", 'loading="eager" fetchpriority="high" style="object-position: ' + model.heroPosition + '"' %}
+      <div class="model-hero__scrim" aria-hidden="true"></div>
+    </div>
+    <div class="model-hero__text wrap" data-vt-copy>
+      <p class="eyebrow">{{ model.number }} · {{ model.line }}</p>
+      <h1 class="model-hero__name"><span data-vt-name>{{ model.name }}</span></h1>
+      <p class="eyebrow">{{ model.meaning }}</p>
+      <p class="lede">{{ model.summary }}</p>
+      <div class="actions">
+        <a class="btn btn--brass" href="#inquire">Ask about a {{ model.name }}</a>
+        <a class="btn btn--text" href="/#lineup-{{ model.slug }}">← All instruments</a>
+        <span class="mono-note mono-note--brass">Pricing on request</span>
+      </div>
+    </div>
+  </header>
+
+  {% include "partials/strings.njk" %}
+
+  <section class="wrap split model-detail">
+    <div class="stack-m model-detail__story">
+      {% for para in model.story %}<p{% if loop.first %} class="pull"{% endif %}>{{ para }}</p>
+      {% endfor %}
+    </div>
+    <dl class="specs">
+      {% for s in model.specs %}<dt>{{ s.label }}</dt><dd>{{ s.value }}</dd>
+      {% endfor %}
+    </dl>
+  </section>
+
+  {% if model.featureImage != model.image %}
+  <figure class="model-feature">
+    {% img model.featureImage, model.featureAlt, "100vw" %}
+  </figure>
+  {% endif %}
+
+  <nav class="model-nav wrap" aria-label="Other instruments">
+    {% for m in models %}{% if m.slug != model.slug %}
+    <a class="model-nav__item" href="/instruments/{{ m.slug }}/">
+      <span class="eyebrow">{{ m.number }} · {{ m.tag }}</span>
+      <span class="model-nav__name">{{ m.name }} →</span>
+    </a>
+    {% endif %}{% endfor %}
+  </nav>
+
+  <section class="inquire light" id="inquire">
+    <div class="wrap inquire__inner">
+      <div class="inquire__intro stack-m">
+        <p class="eyebrow eyebrow--walnut">Start here</p>
+        <h2 class="h2">Tell me about <em>your {{ model.name }}.</em></h2>
+        <p>Every message gets a personal reply, usually within {{ site.replyTime }}. Pricing depends on the build, so it's shared once we've talked.</p>
+      </div>
+      {% include "partials/inquiry-form.njk" %}
+    </div>
+  </section>
+</article>

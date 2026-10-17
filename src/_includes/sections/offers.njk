@@ -1,0 +1,15 @@
+<section class="offers" id="offers">
+  <div class="wrap stack-xl">
+    <p class="eyebrow">V. Everything the shop does</p>
+    <div class="offers__grid">
+      {% for o in offers %}
+      <div class="offer">
+        <h3 class="offer__verb">{{ o.verb }}</h3>
+        <p class="offer__tail">{{ o.tail }}</p>
+        <p class="offer__text">{{ o.text }}</p>
+        <a class="offer__cta" href="{{ o.href }}">{{ o.cta }} →</a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,20 @@
+<section class="process" id="process">
+  <div class="wrap stack-xl">
+    <div class="section-head">
+      <div class="stack-s">
+        <p class="eyebrow eyebrow--cream">VI. How a commission works</p>
+        <h2 class="h2">Listen first.<br><em>Then build.</em></h2>
+      </div>
+      <p class="section-head__aside">No pressure toward upgrades, no hidden costs, and delays told early — not hidden.</p>
+    </div>
+    <ol class="steps">
+      {% for s in process %}
+      <li class="step">
+        <span class="step__num">{{ s.numeral }}</span>
+        <h3 class="step__title">{{ s.title }}</h3>
+        <p>{{ s.text }}</p>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>

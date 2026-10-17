@@ -1,0 +1,28 @@
+{% set current = woods | defaultItem %}
+<section class="covers" id="covers">
+  <div class="wrap covers__inner">
+    <div class="covers__media">
+      {% img "covers/" + current.id, current.alt, "(min-width: 1000px) 55vw, 100vw", "covers__img", 'data-cover-img' %}
+    </div>
+    <div class="covers__body stack-m">
+      <p class="eyebrow eyebrow--walnut">IV. Wooden pickup covers</p>
+      <h2 class="h2">A little House of Jubal <em>for the guitar you already love.</em></h2>
+      <p>Hand-made humbucker covers in solid wood, set in polished metal. The easiest way to put real grain under your strings without commissioning a whole guitar.</p>
+
+      <div class="wood-picker" role="group" aria-label="Choose a wood">
+        {% for w in woods %}
+        <button type="button" class="wood-picker__btn" data-wood="{{ w.id }}" data-name="{{ w.name }}" data-note="{{ w.note }}" data-alt="{{ w.alt }}" data-src="{{ ('covers/' + w.id) | imgUrl(800) }}" data-srcset="{{ ('covers/' + w.id) | srcset }}" aria-pressed="{% if w.default %}true{% else %}false{% endif %}">
+          {% img "swatches/" + w.id, "", "28px" %}
+          {{ w.name }}
+        </button>
+        {% endfor %}
+      </div>
+
+      <div class="covers__caption" aria-live="polite">
+        <p class="pull" data-cover-name>{{ current.name }}</p>
+        <p data-cover-note>{{ current.note }}</p>
+      </div>
+      <a class="btn btn--ink" href="#inquire">Ask for a pair</a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,5 @@
+<div class="strings wrap" aria-hidden="true">
+  {% for s in ["e", "B", "G", "D", "A", "E"] %}
+  <div class="strings__row"><span>{{ s }}</span><i class="strings__line strings__line--{{ loop.index }}"></i></div>
+  {% endfor %}
+</div>

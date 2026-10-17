@@ -1,0 +1,13 @@
+<footer class="site-footer wrap" id="site-footer">
+  <div class="site-footer__brand">
+    {% img "logo/logo-light", site.name, "300px", "site-footer__logo" %}
+    <p class="eyebrow">{{ site.promise }}</p>
+  </div>
+  <div class="site-footer__meta">
+    <span>{{ site.location }}</span>
+    <a href="/#inquire">Commission a guitar</a>
+    <a href="/#offers">Repairs &amp; setups</a>
+    <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+    <span class="site-footer__copy">© {{ "" | year }} {{ site.legalName }}</span>
+  </div>
+</footer>

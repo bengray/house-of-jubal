@@ -1,0 +1,129 @@
+[
+  {
+    "slug": "mathetes",
+    "name": "Mathetēs",
+    "number": "01",
+    "meaning": "Greek · “disciple”",
+    "tag": "“Disciple”",
+    "line": "Main Line",
+    "image": "guitars/mathetes",
+    "imageAlt": "Mathetēs guitar in natural wood with a purpleheart stripe, lying on a wooden floor in warm side light",
+    "slicePosition": "28% 50%",
+    "heroPosition": "50% 55%",
+    "featureImage": "guitars/mathetes-spotlight",
+    "featureAlt": "The Mathetēs standing in a shaft of light against a dark, smoky backdrop",
+    "summary": "[One or two sentences on the Mathetēs: who it's for, how it feels, what it sounds like.]",
+    "story": [
+      "[A paragraph on where the Mathetēs shape came from and what it's meant to do.]",
+      "[A paragraph on how it plays: neck feel, weight, the sound it's built around.]"
+    ],
+    "specs": [
+      {
+        "label": "Body",
+        "value": "[Woods]"
+      },
+      {
+        "label": "Neck",
+        "value": "[Wood, carve profile]"
+      },
+      {
+        "label": "Fretboard",
+        "value": "[Wood, radius]"
+      },
+      {
+        "label": "Scale",
+        "value": "[Length]"
+      },
+      {
+        "label": "Electronics",
+        "value": "[Pickups, controls]"
+      },
+      {
+        "label": "Finish",
+        "value": "[Type, sheen]"
+      }
+    ]
+  },
+  {
+    "slug": "petros",
+    "name": "Petros",
+    "number": "02",
+    "meaning": "Greek · “rock”",
+    "tag": "“Rock”",
+    "line": "Main Line",
+    "image": "guitars/petros",
+    "imageAlt": "Petros guitar in dark walnut with two humbuckers, lying on a dark wooden floor",
+    "slicePosition": "26% 50%",
+    "heroPosition": "45% 55%",
+    "featureImage": "guitars/petros",
+    "featureAlt": "Petros guitar in dark walnut with two humbuckers",
+    "summary": "[One or two sentences on the Petros.]",
+    "story": [
+      "[A paragraph on where the Petros shape came from and what it's meant to do.]",
+      "[A paragraph on how it plays.]"
+    ],
+    "specs": [
+      {
+        "label": "Body",
+        "value": "[Woods]"
+      },
+      {
+        "label": "Neck",
+        "value": "[Wood, carve profile]"
+      },
+      {
+        "label": "Fretboard",
+        "value": "[Wood, radius]"
+      },
+      {
+        "label": "Scale",
+        "value": "[Length]"
+      },
+      {
+        "label": "Electronics",
+        "value": "[Pickups, controls]"
+      },
+      {
+        "label": "Finish",
+        "value": "[Type, sheen]"
+      }
+    ]
+  },
+  {
+    "slug": "redemption",
+    "name": "Redemption",
+    "number": "03",
+    "meaning": "One of one · when the wood is found",
+    "tag": "One of one",
+    "line": "Redemption Series",
+    "image": "guitars/redemption",
+    "imageAlt": "A Redemption Series guitar with a heavily figured, weathered wood body standing under a spotlight",
+    "slicePosition": "50% 55%",
+    "heroPosition": "50% 80%",
+    "featureImage": "guitars/redemption",
+    "featureAlt": "Redemption Series guitar, full length, its reclaimed wood body showing deep grain, cracks and character",
+    "summary": "Built only from overlooked, reclaimed or passed-over wood — and only when the right piece turns up.",
+    "story": [
+      "Where others see something imperfect, overlooked or disposable, we look again. There may still be beauty written into it.",
+      "We don't manufacture imperfections. We don't invent a story. We work with the story already there. Every Redemption guitar is one of one, and it exists only when the right material is found."
+    ],
+    "specs": [
+      {
+        "label": "Body",
+        "value": "Reclaimed or overlooked wood — varies by build"
+      },
+      {
+        "label": "Availability",
+        "value": "One of one, when the wood is found"
+      },
+      {
+        "label": "Neck",
+        "value": "[Wood, carve profile]"
+      },
+      {
+        "label": "Electronics",
+        "value": "[Pickups, controls]"
+      }
+    ]
+  }
+]

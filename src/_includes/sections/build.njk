@@ -1,0 +1,26 @@
+{% set b = featuredBuild %}
+<section class="build" id="build">
+  {% include "partials/grain.njk" %}
+  <div class="wrap stack-l build__inner">
+    <div class="section-head">
+      <div class="stack-s">
+        <p class="eyebrow">III. Anatomy of a build</p>
+        <h2 class="h2">{{ b.title }} <em>{{ b.titleAccent }}</em></h2>
+      </div>
+      <p class="eyebrow">Build {{ b.number }} · {{ b.player }}, {{ b.date }}</p>
+    </div>
+    <figure class="build__figure">
+      {% img b.image, b.imageAlt, "(min-width: 1200px) 1180px, 100vw" %}
+    </figure>
+    <div class="split">
+      <div class="build__story stack-m">
+        <p class="pull">“{{ b.quote }}”</p>
+        <p>{{ b.story }}</p>
+      </div>
+      <dl class="specs">
+        {% for s in b.specs %}<dt>{{ s.label }}</dt><dd>{{ s.value }}</dd>
+        {% endfor %}<dt>Hours at the bench</dt><dd class="specs__hours">{{ b.hours }}</dd>
+      </dl>
+    </div>
+  </div>
+</section>
