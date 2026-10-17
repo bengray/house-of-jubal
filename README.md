@@ -8,7 +8,10 @@ The site for House of Jubal Guitars. Built with [Eleventy](https://www.11ty.dev/
 npm install
 npm start        # dev server at http://localhost:8080
 npm run build    # outputs to _site/
+npm run preview  # build, then serve _site/ at http://localhost:8081
 ```
+
+**Test page transitions with `npm run preview`, not `npm start`.** The dev server's live-reload script reloads a page when it comes back from the browser's back/forward cache, which cuts the closing morph off on the second round trip (seen in Safari). The site itself is fine; this only happens with `npm start`. `preview` serves the plain build, the same as Netlify. It uses the `python3` that ships with macOS.
 
 Node 20 or newer.
 

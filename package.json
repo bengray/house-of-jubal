@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "start": "eleventy --serve",
-    "build": "eleventy"
+    "build": "eleventy",
+    "preview": "eleventy && python3 -m http.server 8081 -d _site"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.0"
