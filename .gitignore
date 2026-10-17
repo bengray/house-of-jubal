@@ -1,0 +1,8 @@
+# Dependencies (Netlify runs npm install)
+node_modules/
+
+# Eleventy build output (Netlify builds it)
+_site/
+
+# macOS
+.DS_Store
