@@ -1,7 +1,33 @@
 [
-  { "id": "maple", "name": "Maple", "note": "Pale and bright, with a quiet ripple of figure that moves as the light does.", "alt": "A pair of maple pickup covers in polished metal frames on linen" },
-  { "id": "olive", "name": "Olive", "note": "Honey-gold with dark, wandering streaks. No two pairs look alike.", "alt": "A pair of olive wood pickup covers with dark swirling grain on linen" },
-  { "id": "padauk", "name": "Padauk", "note": "A deep red-orange that mellows toward brown as the years go by.", "alt": "A pair of bright red padauk pickup covers on linen" },
-  { "id": "purpleheart", "name": "Purpleheart", "note": "Violet straight from the board — the same wood as the Mathetēs center stripe.", "alt": "A pair of purpleheart pickup covers in deep violet on linen" },
-  { "id": "walnut", "name": "Walnut", "note": "Chocolate and straight-grained. The quiet one that goes with everything.", "alt": "A pair of dark walnut pickup covers on linen", "default": true }
+  {
+    "id": "maple",
+    "name": "Maple",
+    "note": "Pale and bright, with a quiet ripple of figure that moves as the light does.",
+    "alt": "A pair of maple pickup covers in polished metal frames on linen"
+  },
+  {
+    "id": "olive",
+    "name": "Olive",
+    "note": "Honey-gold with dark, wandering streaks. No two pairs look alike.",
+    "alt": "A pair of olive wood pickup covers with dark swirling grain on linen"
+  },
+  {
+    "id": "padauk",
+    "name": "Padauk",
+    "note": "A deep red-orange that mellows toward brown as the years go by.",
+    "alt": "A pair of bright red padauk pickup covers on linen"
+  },
+  {
+    "id": "purpleheart",
+    "name": "Purpleheart",
+    "note": "Violet straight from the board — the same wood as the Mathetēs center stripe.",
+    "alt": "A pair of purpleheart pickup covers in deep violet on linen"
+  },
+  {
+    "id": "walnut",
+    "name": "Walnut",
+    "note": "Chocolate and straight-grained. The quiet one that goes with everything.",
+    "alt": "A pair of dark walnut pickup covers on linen",
+    "default": true
+  }
 ]

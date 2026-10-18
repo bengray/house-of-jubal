@@ -1,7 +1,27 @@
 [
-  { "numeral": "i.", "title": "Inquiry", "text": "Your playing, your taste, your practical needs, and the story you want the guitar to carry." },
-  { "numeral": "ii.", "title": "Fit conversation", "text": "An honest talk about whether we're right for each other — and Main Line or Redemption." },
-  { "numeral": "iii.", "title": "Concept & spec", "text": "Model, woods, hardware, electronics and finish agreed — with the tradeoffs explained." },
-  { "numeral": "iv.", "title": "The build", "text": "A deposit reserves your slot. You'll hear about the moments that matter, not every sanding pass." },
-  { "numeral": "v.", "title": "Delivery", "text": "Handed over with a sense of occasion — then a follow-up once it's been played in." }
+  {
+    "numeral": "i.",
+    "title": "Inquiry",
+    "text": "Your playing, your taste, your practical needs, and the story you want the guitar to carry."
+  },
+  {
+    "numeral": "ii.",
+    "title": "Fit conversation",
+    "text": "An honest talk about whether we're right for each other — and Main Line or Redemption."
+  },
+  {
+    "numeral": "iii.",
+    "title": "Concept & spec",
+    "text": "Model, woods, hardware, electronics and finish agreed — with the tradeoffs explained."
+  },
+  {
+    "numeral": "iv.",
+    "title": "The build",
+    "text": "A deposit reserves your slot. You'll hear about the moments that matter, not every sanding pass."
+  },
+  {
+    "numeral": "v.",
+    "title": "Delivery",
+    "text": "Handed over with a sense of occasion — then a follow-up once it's been played in."
+  }
 ]
